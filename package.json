@@ -7,7 +7,8 @@
     "start": "electron .",
     "q": "taskkill /f /im node.exe",
     "qm": "sudo killall -9 node",
-    "build-w": "electron-packager ./ mousy --platform=win32 --arch=x64"
+    "build-w": "electron-packager ./ mousy --platform=win32 --arch=x64",
+    "build": "node builder.js"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -29,5 +30,8 @@
   "devDependencies": {
     "electron": "^8.2.3",
     "electron-packager": "^14.2.1"
+  },
+  "dependencies": {
+    "electron-windows-store": "^2.1.0"
   }
 }
